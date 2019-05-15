@@ -38,3 +38,53 @@ class learnerModel{
  2. Protect eyes from radiation & sunlight
  3. Medical equipment to cure eye deseases
  */
+
+/*
+ Inheritance exercise, membuat 1 story IRL yang bisa menggambarkan inheritance
+ Ex: Steam family share
+ 
+ Defining superclass and subclass
+ Superclass: Motorcycle
+ Subclass:
+ 1. Scooter
+ 2. Sport
+ 4. Chopper
+ 5. Trail
+ 
+ Scooter
+ - Engine
+ - Wheels
+ - Transmission
+ - Engine On()
+ - Engine Off()
+ - Drive()
+ * Trunk
+ 
+ Sport
+ - Engine
+ - Wheels
+ - Transmission
+ - Engine On()
+ - Engine Off()
+ - Drive()
+ * Clutch
+ 
+ Chopper
+ - Engine
+ - Wheels
+ - Transmission
+ - Engine On()
+ - Engine Off()
+ - Drive()
+ * Clutch
+ 
+ Trail
+ - Engine
+ - Wheels
+ - Transmission
+ - Engine On()
+ - Engine Off()
+ - Drive()
+ * Clutch
+ 
+ */
