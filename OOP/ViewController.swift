@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print ("My first commit boi")
+        print ("My second update on github")
     }
 
 
