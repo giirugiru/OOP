@@ -9,34 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var learnerNameLabel: UILabel!
+    @IBOutlet weak var learnerAgeLabel: UILabel!
+    @IBOutlet weak var learnerHeightLabel: UILabel!
+    
+    var learnerInstance: learnerModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        /*
-         OOP Exercise, menentukan 1 object dan buat atribut + fungsi nya
-         Learning Journey CD10
-         Object name: Glasses
-         Attributes:
-         1. Lens
-         2. Frame
-         3. Brand
-         Functionalities:
-         1. To see more clearly
-         2. Protect eyes from radiation & sunlight
-         3. Medical equipment to cure eye deseases
- */
-//        struct glasses{
-//            var lens: String
-//            var frame: String
-//            var brand: String
-//            init(<#parameters#>) {
-//                <#statements#>
-//            }
-//            }
-//        }
+        learnerInstance = learnerModel(learnerName: "Ayam", learnerAge: 40, learnerHeight: 137.5, learnerImageProfile: "IMAGE")
+        updateUI()
+      
     }
-
+    func updateUI(){
+        if let instance = learnerInstance{
+        learnerNameLabel.text = instance.name
+        learnerAgeLabel.text = "\(instance.age!)"
+        learnerHeightLabel.text = "\(instance.height!)"
+        }
+    }
+    
+    @IBAction func increaseAgeButtonClicked(_ sender: UIButton) {
+        if let instance = learnerInstance{
+            instance.increaseAge()
+            updateUI()
+        }
+    }
+   
 
 }
 
